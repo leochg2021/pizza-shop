@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Playfair Display', serif;
+}
+html {
+    width: 100vw;
+    height: 100vh;
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+/* Menu */
+
+.content {
+    width: 100vw;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #6e040a;
+    position: fixed;
+    padding-left: 30rem;
+}
+.logo {
+    width: 98px;
+    height: auto;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+.logo h3{
+    color:white;
+    font-size: 1.6rem;
+}
+.logo img {
+    width: 100%;
+    height: 100%;
+}
+.content .listMenu {
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.content .listMenu li a {
+    padding: 3rem 1rem 2rem 1rem;
+    color: rgb(253, 252, 249);
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 500;
+
+    transition: all 200ms ease-in;
+    
+}
+.content .listMenu li a:hover {
+    background-color: #a36669;
+    border-bottom: 4px solid rgb(206, 13, 13);
+    border-radius: 15px;
+    color: rgb(255, 255, 255);
+    
+}
+/* first-section */
+
+.first-section {
+    height: 100vh;
+    background-image: linear-gradient(rgba(29 ,29 ,29 ,0.6), rgba(29 ,29 ,29 ,0.8)) ,url(./img/fndPizza.jpeg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 5px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.first-section .conteudo-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.first-section h1 {
+    color: #ffc506;
+    font-size: 5rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+.first-section h2 {
+    color: azure;
+    font-size: 3rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+}
+.btn button {
+    width: 230px;
+    height: 60px;
+    cursor: pointer;
+    text-transform: uppercase;
+    background-color: #ffc506;
+    border-radius: 10px;
+    color: #6e040a;
+    font-weight: 700;
+    margin-top: 5rem;
+    align-items: 5px;
+    transition: all 400ms ease-in;
+
+}
+.btn button:hover {
+    border: 1px solid yellow;
+    background-color: transparent;
+    color: #ffc506;
+}
+
+.btn {
+    width: 480px;
+    display: flex;
+    justify-content: space-between;
+}
